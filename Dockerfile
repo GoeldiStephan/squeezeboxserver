@@ -1,6 +1,6 @@
 FROM centos:6
 
-MAINTAINER Walter S.
+MAINTAINER Twobaker.
 
 RUN yum -y install perl-Time-HiRes perl-CGI perl-YAML perl-Digest-MD5 initscripts && \
 	sed -i 's/pidof -c -m/pidof -m/g' /etc/init.d/functions && \
