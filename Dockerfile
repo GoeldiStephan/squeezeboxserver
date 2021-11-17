@@ -16,7 +16,7 @@ RUN yum -y install perl-Time-HiRes perl-CGI perl-YAML perl-Digest-MD5 initscript
 COPY ./bin/run_server /usr/local/bin/
 COPY ./etc/squeezeboxserver /etc/sysconfig/
 
-VOLUME ['/mnt/state']
+#VOLUME ['/mnt/state']
 EXPOSE 3483 9000 9090
 
 CMD /usr/local/bin/run_server
